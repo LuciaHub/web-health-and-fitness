@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Fitness for Lucia Hernandez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3126f06d95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+        <div class="title-container">
+            <h1>Health and Fitness</h1>
+            <h2>by Lucía Hernández</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mí</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn">Servicios</a>
+                    <div class="dropdown-content">
+                        <a href="services.html">Planes de nutrición y entrenamiento</a>     
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#articles" class="dropbtn">Artículos</a>
+                    <div class="dropdown-content">
+                        <a href="fat-loss.html">Pérdida de grasa</a>
+                        <a href="muscle-gain.html">Cómo ganar masa muscular</a>
+                        <a href="sleep.html">Sueño y descanso</a>
+                        <a href="suplements.html">Guía de suplementos</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="login.html">Mi cuenta</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Buscar...">
+            <button class="search-button">Buscar</button>
+        </div>
+    </div>      
+</header>
+    <main>
+      <div class="contact-form">
+          <h1 class="h1-formulario">Formulario de contacto</h1>
+          <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+          <form action="submeter-formulario.php" method="post">
+            <div class="form-group">
+              <label for="nombre" class="label-nombre">Nombre <span class="obligatorio">*</span></label>
+              <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="email" class="label-email">Email <span class="obligatorio">*</span></label>
+              <input type="email" name="email" id="email" required placeholder="Escribe tu email">
+            </div>
+            <div class="form-group">
+              <label for="telefono" class="label-telefono">Teléfono</label>
+              <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+            </div>
+            <div class="form-group">
+              <label for="website" class="label-website">Sitio web</label>
+              <input type="url" name="website" id="website" placeholder="Escribe la URL de tu sitio web">
+            </div>
+            <div class="form-group">
+              <label for="asunto" class="label-asunto">Asunto <span class="obligatorio">*</span></label>
+              <input type="text" name="asunto" id="asunto" required placeholder="Escribe el asunto">
+            </div>
+            <div class="form-group">
+              <label for="mensaje" class="label-mensaje">Mensaje <span class="obligatorio">*</span></label>
+              <textarea name="mensaje" id="mensaje" required placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+            <p class="aviso"><span class="obligatorio">*</span> Los campos son obligatorios.</p>
+          </form>
+      </div>
+      
+    </main>
+    <footer>
+      <section id="contact">
+          <h2>Contacto</h2>
+          <p>Para más información puedes contactarme en:</p>
+          <p>Email: luciahernandez@gmail.com</p>
+          <p>Sígueme en redes sociales:</p>
+          <ul>
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+      </section>
+  </footer>
+</body>
+</html>

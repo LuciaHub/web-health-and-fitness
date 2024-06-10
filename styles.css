@@ -1,0 +1,417 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #252f9c;
+    background-color: #cfe5ff;
+}
+
+/* Estilos para el formulario de registro */
+#register, #login,.contact-form  {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-h2{
+    font-size: 23px;
+    margin-block: 37px;
+    margin-top: 9px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea[name="mensaje"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7c1034;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #252f9c;
+}
+
+/* header y menu*/
+
+header {
+    background-color: #7c1034; /* Rosa */
+    color: white;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+.title-container {
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 2.5em;
+    margin-left: -21px;
+}
+
+header h2 {
+    font-family: 'Great Vibes', cursive;
+    margin: 0;
+    font-size: 1.2em;
+    font-style: italic; /* Asegura que la fuente sea cursiva */
+    margin-left: -16px;
+}
+
+.header-image {
+    text-align: center; /* Centra horizontalmente la imagen */
+    opacity: 0.7; /* Opacidad deseada */
+    width: 100%; /* Ocupa toda la anchura disponible */
+    margin-top: 20px; /* Espacio entre el header y la imagen */
+}
+
+.header-image img {
+    width: 77%;
+    margin-top: 7px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cfe5ff; /* Azul claro */
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    color: #7c1034; /* Rosa */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #252f9c; /* Morado */
+    color: white;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.search-button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #7c1034; /* Rosa */
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.search-button:hover {
+    background-color: #252f9c; /* Morado */
+}
+
+main {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section {
+    margin-bottom: 2em;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.btn {
+    background-color: #7c1034; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al pasar sobre el botón */
+}
+
+.btn:hover {
+    background-color: #252f9c; /* Cambia el color de fondo al pasar sobre el botón */
+}
+
+/*styles de footer*/
+footer {
+    background-color: #cfe5ff; /* Azul claro */
+    text-align: center;
+    padding: 1em;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #252f9c; /* Morado */
+}
+
+/* Estilos para los iconos de Font Awesome -footer-*/
+.fa {
+    font-size: 24px; /* Tamaño predeterminado de los iconos */
+    margin-right: 5px; /* Espacio entre los iconos y el texto */
+}
+
+/* Estilo específico para el icono de Instagram */
+.fa-instagram {
+    color: #252f9c; /* Morado */
+}
+
+.info-box {
+    background-color: #cfe5ff; /* Azul claro */
+    border: 1px solid #7c1034; /* Rosa */
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.info-box h3 {
+    margin-top: 0;
+    color: #7c1034; /* Rosa */
+    font-family: 'Pacifico', cursive;
+}
+
+.info-box a {
+    display: inline-block;
+    margin-top: 0.5em;
+    text-decoration: none;
+    color: #7c1034; /* Rosa */
+    border: 1px solid #7c1034; /* Rosa */
+    border-radius: 3px;
+    padding: 0.5em;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-box a:hover {
+    background-color: #7c1034; /* Rosa */
+    color: #ffffff;
+}
+
+/* Estilos para el formulario de contacto */
+.h1-formulario {
+    color: #7c1034;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.h3-formulario {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aviso {
+    color: #999;
+}
+
+/*Estilos para los servicios de subscripcion*/
+.subscription-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.service {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.service h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.subscription-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subscription-plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.subscription-plan h3 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para los círculos de los artículos */
+.articles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.article-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 150px;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-circle h3 {
+    margin-top: 10px;
+    color: #7c1034;
+}
+
+.article-circle:hover {
+    transform: scale(1.1);
+}
